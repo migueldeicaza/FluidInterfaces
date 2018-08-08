@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluidInterfaces", "FluidInterfaces.csproj", "{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Release|iPhone.Build.0 = Release|iPhone
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C1F13BE3-B6F3-4A78-BC58-B3A789D00D64}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
