@@ -83,6 +83,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="MonoTouch.Dialog">
+      <HintPath>packages\MonoTouch.Dialog.2.0.0-pre1\lib\XamariniOS10\MonoTouch.Dialog.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -95,14 +98,13 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Interfaces\CalculatorButton.cs" />
     <Compile Include="Interfaces\InterfaceViewController.cs" />
@@ -113,11 +115,6 @@
     <Compile Include="Interfaces\FlashlightButton.cs" />
     <Compile Include="Utilities\CGPointExtensions.cs" />
     <Compile Include="Utilities\UISpringTimingParameters.cs" />
-    <Compile Include="Renamed.cs" />
-    <Compile Include="MenuViewController.cs" />
-    <Compile Include="MenuViewController.designer.cs">
-      <DependentUpon>MenuViewController.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ProjectExtensions>

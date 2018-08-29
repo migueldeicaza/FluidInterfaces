@@ -11,8 +11,8 @@ using UIKit;
 
 namespace FluidInterfaces
 {
-    [Register ("MenuViewController")]
-    partial class MenuViewController
+    [Register ("InterfaceCell")]
+    partial class InterfaceCell
     {
         void ReleaseDesignerOutlets ()
         {

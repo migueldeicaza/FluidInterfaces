@@ -13,6 +13,7 @@ namespace FluidInterfaces {
 
 		public MenuViewController ()
 		{
+			Delegate = this;
 		}
 
 		public override void ViewDidLoad ()
@@ -29,6 +30,17 @@ namespace FluidInterfaces {
 			foreach (var cell in collectionView.VisibleCells)
 				cell.Highlighted = true;
 
+		}
+
+		class CollectionViewDelegate : UICollectionViewDelegate {
+			[Weak] MenuViewController parent;
+			public CollectionViewDelegate (MenuViewController parent) => this.parent = parent;
+
+			public override void ItemSelected (UICollectionView collectionView, NSIndexPath indexPath)
+			{
+				parent.collectionView.CellForItem (indexPath).Highlighted = true;
+
+			}
 		}
 	}
 }

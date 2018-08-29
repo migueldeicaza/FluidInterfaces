@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using MonoTouch.Dialog;
 using UIKit;
 
 
@@ -11,6 +12,16 @@ public class AppDelegate : UIApplicationDelegate {
 
 	public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 	{
+		var navigation = new UINavigationController ();
+
+		var menu = new RootElement ("Fluid Interfaces") {
+			new Section ("Fluid Interfaces"){
+				new StringElement ("Calculator Button", Calculator)
+			}
+		};
+		var dv = new DialogViewController (menu);
+		navigation.PushViewController (dv, true);
+		Window.RootViewController = navigation;
 		return true;
 	}
 

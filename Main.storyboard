@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +13,7 @@
         <!--Fluid Interfaces-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModuleProvider="target" sceneMemberID="viewController" customModule="FluidInterfaces">
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="interfaceCell" id="5uT-uP-Adl" customClass="InterfaceCell" customModule="FluidInterfaces" customModuleProvider="target">
-                                        <rect key="frame" x="11.666666666666666" y="14" width="352" height="60"/>
+                                        <rect key="frame" x="11.5" y="14" width="352" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="352" height="60"/>
@@ -66,10 +67,6 @@
                                             <constraint firstItem="LnC-u6-tHm" firstAttribute="centerY" secondItem="5uT-uP-Adl" secondAttribute="centerY" id="oau-7e-PI3"/>
                                             <constraint firstItem="gGh-mK-Q09" firstAttribute="leading" secondItem="5uT-uP-Adl" secondAttribute="leading" constant="18" id="oqJ-Cu-yt3"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="imageView" destination="gGh-mK-Q09" id="name-outlet-gGh-mK-Q09"/>
-                                            <outlet property="titleLabel" destination="wjw-fn-AAj" id="name-outlet-wjw-fn-AAj"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -84,6 +81,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fluid Interfaces" largeTitleDisplayMode="always" id="TYH-0R-Iag"/>
+                    <connections>
+                        <outlet property="collectionView" destination="5HB-zY-BMe" id="name-outlet-5HB-zY-BMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,9 +99,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GZ2-th-RVg"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="es7-V7-hXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
