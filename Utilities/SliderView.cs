@@ -64,6 +64,9 @@ public class SliderView : UIView {
 
 	void SharedInit ()
 	{
+		slider = new UISlider () {
+			TranslatesAutoresizingMaskIntoConstraints = true
+		};
 		AddSubview (titleLabel);
 		titleLabel.LeadingAnchor.ConstraintEqualTo (LeadingAnchor).Active = true;
 		titleLabel.TopAnchor.ConstraintEqualTo (TopAnchor).Active = true;

@@ -61,7 +61,7 @@ public class SpringInterfaceViewController : InterfaceViewController {
 
 	void AnimateView ()
 	{
-		var timingParameters = UISpringTiming.MakeTimingParameters (dampingRatio, frequencyResponse, new CGVector (0, 0));
+		var timingParameters = UISpringTiming.MakeTimingParameters (damping: dampingRatio, response: frequencyResponse);
 		animator = new UIViewPropertyAnimator (duration: 0, parameters: timingParameters);
 		animator.AddAnimations (() => {
 			var translation = View.Bounds.Width - 2 * margin - 80;
