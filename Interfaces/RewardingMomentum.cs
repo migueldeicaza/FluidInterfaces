@@ -4,29 +4,33 @@ using CoreGraphics;
 using Foundation;
 
 public class MomentumInterfaceViewController : InterfaceViewController {
-	public MomentumInterfaceViewController () { }
 	GradientView momentumView;
 	bool isOpen;
 	nfloat animationProgress = 0;
 	CGAffineTransform closedTransform = CGAffineTransform.MakeIdentity ();
 	UIViewPropertyAnimator animator = new UIViewPropertyAnimator ();
+	UIView handleView;
+
+	public MomentumInterfaceViewController ()
+	{
+		momentumView = new GradientView (CGRect.Empty) {
+			TranslatesAutoresizingMaskIntoConstraints = false,
+			BackgroundColor = UIColor.FromWhiteAlpha (white: 0.3f, alpha: 1),
+			TopColor = Color.FromHex (0x61A8FF),
+			BottomColor = Color.FromHex (hex: 0x243BD1),
+			CornerRadius = 30f,
+		};
+		handleView = new UIView () {
+			TranslatesAutoresizingMaskIntoConstraints = false,
+			BackgroundColor = UIColor.FromWhiteAlpha (white: 1, alpha: 0.5f),
+		};
+	}
 
 	public override void ViewDidLoad ()
 	{
 		base.ViewDidLoad ();
-		momentumView = new GradientView (CGRect.Empty) {
-			TranslatesAutoresizingMaskIntoConstraints = false,
-			BackgroundColor = UIColor.FromWhiteAlpha (white: 0.3f, alpha: 1),
-	    		TopColor = Color.FromHex (0x61A8FF),
-			BottomColor = Color.FromHex (hex: 0x243BD1),
-	    		CornerRadius = 30f,
-		};
 		View.AddSubview (momentumView);
 
-		var handleView = new UIView () {
-			TranslatesAutoresizingMaskIntoConstraints = false,
-			BackgroundColor = UIColor.FromWhiteAlpha (white: 1, alpha: 0.5f),
-		};
 		handleView.Layer.CornerRadius = 3;
 
 		momentumView.LeadingAnchor.ConstraintEqualTo (View.LeadingAnchor).Active = true;

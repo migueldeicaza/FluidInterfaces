@@ -90,6 +90,36 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.appiconset\icon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.appiconset\icon120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.appiconset\icon152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.appiconset\icon167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.appiconset\icon180.png" />
+    <ImageAsset Include="Assets.xcassets\icon_spring.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_spring.imageset\icon_spring.png" />
+    <ImageAsset Include="Assets.xcassets\icon_rubber.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_rubber.imageset\icon_rubber.png" />
+    <ImageAsset Include="Assets.xcassets\icon_rotation.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_rotation.imageset\icon_rotation.png" />
+    <ImageAsset Include="Assets.xcassets\icon_pip.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_pip.imageset\icon_pip.png" />
+    <ImageAsset Include="Assets.xcassets\icon_momentum.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_momentum.imageset\icon_momentum.png" />
+    <ImageAsset Include="Assets.xcassets\icon_flash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_flash.imageset\icon_flash.png" />
+    <ImageAsset Include="Assets.xcassets\icon_calc.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_calc.imageset\icon_calc.png" />
+    <ImageAsset Include="Assets.xcassets\icon_acceleration.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_acceleration.imageset\icon_acceleration.png" />
+    <ImageAsset Include="Assets.xcassets\flashlight_on.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\flashlight_on.imageset\flashlight_on.pdf" />
+    <ImageAsset Include="Assets.xcassets\flashlight_off.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\flashlight_off.imageset\flashlight_off.pdf" />
+    <ImageAsset Include="Assets.xcassets\chevron.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chevron.imageset\chevron.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
