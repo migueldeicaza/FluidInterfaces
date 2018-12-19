@@ -118,6 +118,7 @@
     <Compile Include="Interfaces\Acceleration.cs" />
     <Compile Include="Utilities\UIColorExtensions.cs" />
     <Compile Include="Interfaces\Rubberbanding.cs" />
+    <Compile Include="Interfaces\RewardingMomentum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ProjectExtensions>
